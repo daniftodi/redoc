@@ -1,8 +1,11 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL: https://daniftodi.github.io/redoc
+baseURL: //daniftodi.github.io/redoc
 title: Extole Documentation
 theme: hugo-book
+  
+relativeURLs: true
+canonifyURLs: true
 
 # Book configuration
 disablePathToLower: true
