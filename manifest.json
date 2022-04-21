@@ -1,8 +1,8 @@
 {
   "name": "Extole Documentation",
   "short_name": "Extole Documentation",
-  "start_url": "/./",
-  "scope": "/./",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
