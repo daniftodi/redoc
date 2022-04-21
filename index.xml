@@ -4,9 +4,9 @@ Initialize a connection from your Mobile App to your Extole marketing programs
 Identify your users to Extole to power capabilities for targeting campaigns, delivering appropriate rewards, executing A/B tests, and more.</description></item><item><title/><link>//daniftodi.github.io/redoc/docs/client-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//daniftodi.github.io/redoc/docs/client-api/</guid><description>Client API # It is important to use client API in cases like&amp;hellip;
 It is documented automtically by OpenAPI
 &amp;hellip;
-SwaggerUI window.onload = () = { window.ui = SwaggerUIBundle({ url: "\/openapi\/client.json", dom_id: '#swagger-ui', }); };</description></item><item><title/><link>//daniftodi.github.io/redoc/docs/ios-mobile-sdk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//daniftodi.github.io/redoc/docs/ios-mobile-sdk/</guid><description>iOS Mobile SDK # Mobile SDK is used &amp;hellip;
+SwaggerUI window.onload = () = { window.ui = SwaggerUIBundle({ url: "openapi\/client.json", dom_id: '#swagger-ui', }); };</description></item><item><title/><link>//daniftodi.github.io/redoc/docs/ios-mobile-sdk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//daniftodi.github.io/redoc/docs/ios-mobile-sdk/</guid><description>iOS Mobile SDK # Mobile SDK is used &amp;hellip;
 Sub Title 1 # Some text
 Sub Title 2 # Additional text</description></item><item><title>Client API</title><link>//daniftodi.github.io/redoc/docs/consumer-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//daniftodi.github.io/redoc/docs/consumer-api/</guid><description>It is important to use client API in cases like&amp;hellip;
 It is documented automtically by OpenAPI
 &amp;hellip;
-SwaggerUI window.onload = () = { window.ui = SwaggerUIBundle({ url: "\/openapi\/consumer.json", dom_id: '#swagger-ui', }); };</description></item></channel></rss>
+SwaggerUI window.onload = () = { window.ui = SwaggerUIBundle({ url: "openapi\/consumer.json", dom_id: '#swagger-ui', }); };</description></item></channel></rss>
