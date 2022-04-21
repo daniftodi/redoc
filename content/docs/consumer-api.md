@@ -12,4 +12,4 @@ It is documented automtically by OpenAPI
 ...
 
 
-{{< oai-spec url="openapi/consumer.json" api_key="consumer-open-api" >}}
+{{< oai-spec url="../../openapi/consumer.json" api_key="consumer-open-api" >}}
