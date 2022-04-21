@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extole Documentation</title>
+    <link>./</link>
+    <description>Recent content on Extole Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Apr 2022 14:34:02 +0300</lastBuildDate><atom:link href="./index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobile Sdk</title>
+      <link>./posts/mobile-sdk/</link>
+      <pubDate>Thu, 21 Apr 2022 14:34:02 +0300</pubDate>
+      
+      <guid>./posts/mobile-sdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>./docs/android-mobile-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>./docs/android-mobile-sdk/</guid>
+      <description>About Extole’s SDK and Why You Should Use It #  Extole’s Mobile SDK for iOS / Android allow you to load content through native build code or launch a WebView hosted experience in-app.
+The Extole SDK allows you to easily:
+Initialize a connection from your Mobile App to your Extole marketing programs
+Identify your users to Extole to power capabilities for targeting campaigns, delivering appropriate rewards, executing A/B tests, and more.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>./docs/client-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>./docs/client-api/</guid>
+      <description>Client API #  It is important to use client API in cases like&amp;hellip;
+It is documented automtically by OpenAPI
+&amp;hellip;
+ SwaggerUI      window.onload = () = { window.ui = SwaggerUIBundle({ url: &#34;\/openapi\/client.json&#34;, dom_id: &#39;#swagger-ui&#39;, }); };    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>./docs/ios-mobile-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>./docs/ios-mobile-sdk/</guid>
+      <description>iOS Mobile SDK #  Mobile SDK is used &amp;hellip;
+Sub Title 1 #  Some text
+Sub Title 2 #  Additional text</description>
+    </item>
+    
+    <item>
+      <title>Client API</title>
+      <link>./docs/consumer-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>./docs/consumer-api/</guid>
+      <description>It is important to use client API in cases like&amp;hellip;
+It is documented automtically by OpenAPI
+&amp;hellip;
+ SwaggerUI      window.onload = () = { window.ui = SwaggerUIBundle({ url: &#34;\/openapi\/consumer.json&#34;, dom_id: &#39;#swagger-ui&#39;, }); };    </description>
+    </item>
+    
+  </channel>
+</rss>

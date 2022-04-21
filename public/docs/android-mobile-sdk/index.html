@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="About Extole’s SDK and Why You Should Use It #  Extole’s Mobile SDK for iOS / Android allow you to load content through native build code or launch a WebView hosted experience in-app.
+The Extole SDK allows you to easily:
+Initialize a connection from your Mobile App to your Extole marketing programs
+Identify your users to Extole to power capabilities for targeting campaigns, delivering appropriate rewards, executing A/B tests, and more.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="About Extole’s SDK and Why You Should Use It #  Extole’s Mobile SDK for iOS / Android allow you to load content through native build code or launch a WebView hosted experience in-app.
+The Extole SDK allows you to easily:
+Initialize a connection from your Mobile App to your Extole marketing programs
+Identify your users to Extole to power capabilities for targeting campaigns, delivering appropriate rewards, executing A/B tests, and more." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="./docs/android-mobile-sdk/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2022-04-21T15:59:57+03:00" />
+
+<title>Android Mobile Sdk | Extole Documentation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" >
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.bb1b2ade518204330215d221041ca4fef729fe61839e71bd990cb29990455f01.js" ></script>
+
+  <script defer src="/sw.min.88f1afdaf4798d7d3520420dcfe201f928c3d371fdedfc3ae28cd9b6b79544f8.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container-lg flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="./"><span>Extole Documentation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="./zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+  <a href="docs/">Docs</a>
+<ul>
+<li>
+  <a href="docs/ios-mobile-sdk/">iOS Mobile SDK</a></li>
+<li>
+  <a href="docs/android-mobile-sdk/"class=active>Android Mobile SDK</a></li>
+</ul>
+</li>
+<li>
+  <a href="docs/client-api/">Client API</a></li>
+<li>
+  <a href="docs/consumer-api/">Consumer API</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://extole.com" target="_blank" rel="noopener">
+        Extole
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Android Mobile Sdk</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#about-extoles-sdk-and-why-you-should-use-it">About Extole’s SDK and Why You Should Use It</a></li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#dependencies">Dependencies</a>
+          <ul>
+            <li><a href="#repository">Repository</a></li>
+            <li><a href="#gradle-dependency">Gradle Dependency</a></li>
+          </ul>
+        </li>
+        <li><a href="#0-code-initializing">0 Code initializing</a>
+          <ul>
+            <li><a href="#sdk-apis-documentation">SDK APIs Documentation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="about-extoles-sdk-and-why-you-should-use-it">
+  About Extole’s SDK and Why You Should Use It
+  <a class="anchor" href="#about-extoles-sdk-and-why-you-should-use-it">#</a>
+</h1>
+<p>Extole’s Mobile SDK for iOS / Android allow you to load content through native build code or launch a WebView hosted experience in-app.</p>
+<p>The Extole SDK allows you to easily:</p>
+<p>Initialize a connection from your Mobile App to your Extole marketing programs</p>
+<p>Identify your users to Extole to power capabilities for targeting campaigns, delivering appropriate rewards, executing A/B tests, and more. Identification also allows for consistent consumer experiences across your mobile app and other environments.</p>
+<p>Load Content from Extole for the appropriate campaign, which is useful for calls-to-action or if you are building in-app experiences that don’t use Extole’s preconfigured content elements.</p>
+<p>Launch a WebView sharing experience for the Extole-hosted campaign.</p>
+<p>iOS repository: 
+  <a href="https://github.com/extole/ios">GitHub</a></p>
+<p>Android repository: 
+  <a href="https://github.com/extole/android">GitHub</a></p>
+<h1 id="getting-started">
+  Getting Started
+  <a class="anchor" href="#getting-started">#</a>
+</h1>
+<p>Understanding Programs, Campaigns, and Zones
+The Extole SDK/API functions by interaction with Programs, Campaigns, and Zones inside of your marketing program.</p>
+<p>Program
+A high-level marketing program you’ve targeted to a specific audience.  A program could be your “refer-a-friend” program or “influencer” program or a “welcome offer” program.</p>
+<p>Campaign
+Inside of a Program, there may be multiple campaigns. In general, as a developer, you do not need to understand what campaigns are active. When requesting content for a specific program, the Extole targeting engine will determine the appropriate campaign to return. For example, if you request content for your refer-a-friend program and the program is running an A/B test, Extole will determine whether to provide the A Variant Campaign or B Variant Campaign. This happens seamlessly in the SDK and underlying API.</p>
+<p>Zone
+A zone is a specific piece of content inside of a campaign.  For example, you may have a “mobile_menu” zone, that would provide the icon and text to render in the mobile menu. You may have a “homepage_tile” zone that would tell you the proper image to render on the homepage. The content of the zones is controlled by the marketing team through the My Extole admin app, allowing marketers to dynamically control the content and make sure it&rsquo;s consistent across mobile app, mobile web, desktop web, etc.</p>
+<h2 id="dependencies">
+  Dependencies
+  <a class="anchor" href="#dependencies">#</a>
+</h2>
+<h3 id="repository">
+  Repository
+  <a class="anchor" href="#repository">#</a>
+</h3>
+<pre tabindex="0"><code>maven {
+    name &#34;github&#34;
+    url &#34;https://maven.pkg.github.com/extole/android-sdk&#34;
+}
+</code></pre><h3 id="gradle-dependency">
+  Gradle Dependency
+  <a class="anchor" href="#gradle-dependency">#</a>
+</h3>
+<pre tabindex="0"><code>implementation &#39;com.extole.mobile:android-sdk:1.0.+&#39;
+</code></pre><h2 id="0-code-initializing">
+  0 Code initializing
+  <a class="anchor" href="#0-code-initializing">#</a>
+</h2>
+<script type="application/javascript" src="https://gist.github.com/daniftodi/5914087dca824853a398a8a66b6e4c3a.js"></script>
+
+<h3 id="sdk-apis-documentation">
+  SDK APIs Documentation
+  <a class="anchor" href="#sdk-apis-documentation">#</a>
+</h3>
+<iframe width='100%' height='800px' frameborder='none' src="/mobile/android/index.html"></iframe></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/extole/docs/commit/eecd3ef4da97d83d6e288c4d5f652db543071edc" title='Last modified by diftodi | April 21, 2022' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>April 21, 2022</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/extole/docs/edit/main/exampleSite/content/docs/android-mobile-sdk.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#about-extoles-sdk-and-why-you-should-use-it">About Extole’s SDK and Why You Should Use It</a></li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#dependencies">Dependencies</a>
+          <ul>
+            <li><a href="#repository">Repository</a></li>
+            <li><a href="#gradle-dependency">Gradle Dependency</a></li>
+          </ul>
+        </li>
+        <li><a href="#0-code-initializing">0 Code initializing</a>
+          <ul>
+            <li><a href="#sdk-apis-documentation">SDK APIs Documentation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
