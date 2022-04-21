@@ -1,0 +1,4 @@
+baseURL = 'http://extole.com/'
+languageCode = 'en-us'
+title = 'Extole Documentation'
+theme = "hugo-book"
